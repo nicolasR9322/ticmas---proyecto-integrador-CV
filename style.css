@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Raleway&display=swap');
+/* ------ GENERALES INCIO ------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+:root{
+    /* colores */
+    --negro: #000;
+    --blanco: #fff;
+    --azul: #0e28bd;
+    --celeste: #0ebdbd;;
+    --amarillo:#c9c61d;
+    --rosa:#a718b9;
+    /* fuentes */
+    --titulo:'Anton', sans-serif;;
+    --subtitulo: 'Lobster', cursive;;
+    --parrafo:"Raleway";
+    /* tamaños */
+    --xl: 3rem;
+    --l: 2rem;
+    --sm:1rem;
+}
+p{
+    font-family: var(--parrafo);
+    font-size: var(--sm);
+}
+h2{
+    font-family: var(--subtitulo);
+    font-size: var(--xl);
+}
+
+li{
+    font-family: var(--parrafo);
+    font-size: var(--sm);
+}
+h3{
+    font-family: var(--titulo);
+}
+a{
+    text-decoration: none;
+}
+.footer-contacto{
+    font-family: var(--subtitulo);
+    font-size: var(--sm);
+}
+
+/* BARRA DE SCROLL INICIO*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--negro)
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--amarillo),var(--negro),var(--amarillo))
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(var(--negro),var(--amarillo),var(--negro))
+  }
+
+  /* BARRA DE SCROLL FINAL*/
+  
+/* ------ GENERALES FINAL ------ */
+
+/* ------ HEADER INCIO ------ */
+header{
+    /* background:linear-gradient(var(--negro), var(--azul),var(--blanco)); */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background:linear-gradient(var(--negro),var(--rosa),var(--negro));
+}
+#cv,
+#about,
+#conocimientos,
+#exp{
+    scroll-margin-top: 5rem;
+}
+header div.navbar nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    border: 1px solid var(--negro);
+    width: 100%;
+}
+
+header div.navbar{
+    height: 50%;
+    width: 0;
+    z-index: 100;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 2s ease;
+    color: var(--celeste);
+    display: flex;
+    justify-content: center;
+}
+.link-close{
+    color: var(--rosa);
+}
+
+header div.navbar span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid var(--blanco);
+    border-radius: 30%;
+    font-size: 2rem;
+}
+
+header div.navbar span:active{
+    background-color: var(--rosa);
+}
+/* ------ MENU HAMBURGUESA INICIO ------ */
+header div.burger-menu{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+header div.burger-menu div.menu-barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: var(--negro);
+    border: 2px solid var(--blanco);
+    cursor: pointer;
+    color: var(--celeste);
+    border-radius: 6px;
+    height: 50px;
+    align-items: center;
+}
+
+header div.burger-menu img{
+    width: 75px;
+    animation: sol 3s ease infinite alternate;
+}
+
+header div.burger-menu div.menu-barra i.item-1{
+    animation: burgerMenu 1s ease infinite alternate;    
+}
+
+header div.burger-menu div.menu-barra i.item-2{
+    animation: burgerMenu 2s ease infinite;
+}
+header div.burger-menu div.menu-barra i.item-3{
+    animation: burgerMenu 3s ease infinite;
+}
+
+header div.burger-menu div.menu-barra:hover{
+    color: var(--negro);
+    background-color: var(--rosa);
+}
+/* ------ MENU HAMBURGUESA FINAL ------ */
+
+
+/* ------ HEADER FINAL ------ */
+
+/* ------ ANIMACIONES HEADER INCIO ------ */
+@keyframes burgerMenu {
+    0%{
+        border-color: var(--blanco);
+        color: var(--celeste);
+    }
+    100%{
+
+        border-color: var(--amarillo);
+        color: var(--amarillo);
+    }
+}
+
+@keyframes sol{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+        filter:sepia();
+
+    }
+}
+/* ------ ANIMACIONES HEADER FINAL ------ */
+
+main img{
+    width: 200px;
+    height: 100px;
+}
+
+
+
+/* ------ SECCION PRINCIPAL INICIO  ------*/
+main{
+    background: url("./images/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--blanco);
+}
+/* ------ SECCION PRINCIPAL INTRODUCCION INICIO  ------*/
+
+main section.main-intro{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section.main-intro article h2{
+    text-align: center;
+}
+
+main section.main-intro article div.main-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+main section.main-intro article div.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main section.main-intro article div.main-content img{
+    border-radius: 50%;
+    margin: 2rem;
+    
+}
+/* ------ tarjeta girable inicio  ------*/
+
+main section.main-intro .main-card{
+    border: 3px solid var(--blanco);
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.main-card-inner{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+.main-carta-contenedor img{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    
+}
+.main-carta-contenedor p.main-show{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    color: #fff;
+    
+}
+
+.main-card:hover .main-card-inner{
+    transform: rotateY(180deg);
+    
+}
+.main-carta-contenedor,
+.main-carta-contenido{
+    backface-visibility: hidden;
+    
+}
+.main-carta-contenido{
+    transform: rotateY(180deg);
+    background: linear-gradient(var(--negro),var(--rosa));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ------ tarjeta girable FINAL  ------*/
+
+/* ------ SECCION PRINCIPAL INTRODUCCION FINAL  ------*/
+
+/* ------ SECCION PRINCIPAL ABOUT INICIO  ------*/
+
+main section.main-about{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+main section.main-about h2{
+    text-align: center;
+}
+
+/* ------ SECCION PRINCIPAL ABOUT FINAL  ------*/
+
+/* ------ SECCION PRINCIPAL CONOCIMIENTOS INICIO  ------*/
+#conocimientos{
+    text-align: center;
+}
+
+main section.main-conocimientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section.main-conocimientos article.main-conocimientos-item{
+    border: 1px solid var(--blanco);
+    background: rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 90%;
+}
+main section.main-conocimientos article.main-conocimientos-item h2{
+    text-align: center;    
+}
+main section.main-conocimientos article.main-conocimientos-item i{
+    font-size: 5rem;
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+}
+main section.main-conocimientos article.main-conocimientos-item i:hover{
+    animation: iconos 2s ease-in-out infinite alternate;
+}
+
+@keyframes iconos {
+    0%{
+        color: #ee8206;
+    }
+    20%{
+        color: var(--celeste);
+    }
+    40%{
+        color: #5908b6;
+    }
+    75%{
+        color: var(--amarillo);
+    }
+    100%{ 
+        color: #0aad04;
+    }
+}
+
+/* ------ SECCION PRINCIPAL CONOCIMIENTOS FINAL  ------*/
+
+/* ------ SECCION PRINCIPAL EXPERIENCIA FINAL  ------*/
+
+.main-exp-h2{
+    font-size: var(--l);
+}
+
+
+section.main-experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section.main-experiencia h2{
+    text-align: center;
+}
+
+section.main-experiencia article.main-exp-card{
+    border: 1px solid var(--blanco);
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    background: rgba(0,0,0, 0.5);
+    width: 90%;
+}
+
+section.main-experiencia article.main-exp-card h3{
+    text-align: center;
+}
+section.main-experiencia article.main-exp-card p{
+    margin-left: 0.5rem;
+    
+}
+
+/* ------ SECCION PRINCIPAL EXPERIENCIA FINAL  ------*/
+
+
+/* ------ SECCION PRINCIPAL FINAL  ------*/
+
+/* ------ FOOTER INICIO  ------*/
+
+
+footer{
+    background:linear-gradient(var(--negro),var(--negro),var(--rosa),var(--negro),var(--negro));
+    color: var(--negro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.footer-logo img{
+    width: 175px;
+}
+
+footer div.contacto{
+    list-style: none;
+    text-decoration: none;
+    width: 50%;
+}
+
+footer div.footer-contacto ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem 2rem;
+}
+
+footer div.footer-contacto ul li{
+    margin: 1rem 0;
+}
+
+footer div.footer-contacto ul li a{
+    color: var(--celeste);
+    cursor: pointer;
+}
+
+footer div.footer-contacto span.contacto{
+    background-color: var(--blanco);
+    border: 2px solid var(--negro);
+    border-radius: 5px;
+    font-size: 2rem;
+    animation: contacto 1s ease infinite alternate;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+@keyframes contacto {
+    0%{
+        border-color: var(--amarillo);
+    }
+    50%{
+        border-color: var(--negro);
+    }
+    100%{
+        border-color: var(--amarillo);
+    }
+}
+
+/* ------ FOOTER FINAL  ------*/
+
+@media screen and (min-width:768px) {
+    header{
+        width: 100%;
+    }
+    header div.burger-menu{
+        display: none;
+    }
+    header div.navbar{
+        width: 100% !important;
+        height: 75px;
+        position: sticky;
+        margin: 0 auto;
+    }
+    header div.navbar nav ul li{
+        margin: 0 2.5rem;
+    }
+    header div.navbar nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-principal{
+        width: 200px;
+        height: 200px;
+    }
+    .close{
+        display: none;
+    }
+    .main-carta-contenedor p.main-show{
+        top: 45%;
+        left: 40%;
+    }
+    section.main-intro article{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    section.main-intro article div.main-info div.main-card{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    section.main-intro article div.main-info div.main-card img{
+        width: 50%;
+        height: 300px;
+        width: 100%;
+    }
+    main section.main-conocimientos article.main-conocimientos-item{
+        margin: 1rem auto;
+    }
+    main section.main-conocimientos article.main-conocimientos-item ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+    }
+    main section.main-conocimientos article.main-conocimientos-item ul li{
+        padding: 1.5rem;
+        width: 40%;
+    }
+}
+@media screen and (min-width:1024px) {
+    section.main-intro article div.main-info div.main-card img{
+        width: 100%;
+        height: 400px;
+        width: 100%;
+    }
+    .main-content{
+        gap: 5rem;
+    }
+    .main-principal{
+        width: 250px;
+        height: 250px;
+    }
+    .main-about{
+        text-align: center;
+    }
+}

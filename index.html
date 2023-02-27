@@ -5,8 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hola mundo</h1>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#cv" class="link-close">inicio</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="link-close">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#conocimientos" class="link-close">Conocimientos</a>
+                    </li>
+                    <li>
+                        <a href="#exp" class="link-close">experiencia</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="close">&#9932;</span>
+        </div>
+        <div class="burger-menu">
+            <div>
+                <a href="/">
+                    <img src="./images/solIcono.png" alt="">  
+                </a>
+
+            </div>
+            <div class="menu-barra">
+                <i class="fa-solid fa-circle-dot item-1"></i>
+                <i class="fa-solid fa-circle-dot item-2"></i>
+                <i class="fa-solid fa-circle-dot item-3"></i>
+            </div>
+        </div>
+    </header>
+<main>
+    <section class="main-intro">
+        <article>
+            <div class="main-content">
+                <h2 id="cv">Curriculum Vitae</h2>
+                <img src="./images/lambda.jpg" alt="" class="main-principal">
+
+            </div>
+            <div class="main-info">
+                <div class="main-card">
+                <div class="main-card-inner">
+                    <div class="main-carta-contenedor">
+                        <img src="./images/fondo1.jpg" alt="">
+                        <p class="main-show">Mis datos</p>
+                    </div>
+                    <div class="main-carta-contenido">
+                    <p>Nicolas Rodriguez</p>
+                    <p>Email: nicolas.a.rodriguez93@gmail.com</p>
+                    <p><a href="https://github.com/nicolasR9322">Github</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </article>
+    </section>
+    <section class="main-about">
+        <article>
+            <h2 id="about">Sobre mi</h2>
+            <p>
+                Detallista, Perfeccionista y entusiasta de la programación
+¿Qué realizo actualmente? 
+<p>Estudiante en la modalidad Full Stack Node Js en Digital House</p>
+<p>-Estudiante en la modalidad Full Stack Python en Agencia aprendizaje a lo largo de la vida (Codo a Codo CABA)</p>
+            </p>
+        </article>
+    </section>
+    <section class="main-conocimientos">
+        <h2 id="conocimientos">mis conocimientos</h2>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>HTML</h2>
+                <i class="fa-brands fa-html5"></i>
+                <p>
+                <ul>
+                    <li>Maquetado de paginas</li>
+                    <li>Formularios</li>
+                </ul>
+            </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>CSS</h2>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales: colores, medidas, tipografias</li>
+                        <li>Atributos y clases</li>
+                        <li>Especificidad y herencia</li>
+                        <li>Diseño responsivo</li>
+                        <li>Posicionamiento Flexbox y Flexbox grid</li>
+                        <li>Estilos Formularios: radio buttons, psuedo selectores</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>Bootstrap</h2>
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos basicos: Framework CSS</li>
+                        <li>Componentes y funcionalidades</li>
+                        <li>Grid Layouts</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>Git</h2>
+                <i class="fa-brands fa-git-alt"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos basicos: introduccion a Git y GitHub</li>
+                        <li>Comandos básicos</li>
+                        <li>Creación de repositorios y ramas</li>
+                        <li>Resolucion de conflictos en ramas y merge</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>Javascript</h2>
+                <i class="fa-brands fa-square-js"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales: sintaxis básica</li>
+                        <li>Manejo de variables</li>
+                        <li>Manejo de operaciones aritmeticas,logicas y comparativos</li>
+                        <li>Condicionales y funciones</li>
+                        <li>Ciclos: For y While</li>
+                        <li>Scope global y loca</li>
+                        <li>Funciones: Anonimas y Flechas</li>
+                        <li>Callbacks</li>
+                        <li>Objetos: Propiedades y metodos</li>
+                        <li>Funciones constructoras</li>
+                        <li>Objeto String y sus metodos</li>
+                        <li>Arrays: Funciones para operar arrays</li>
+                        <li>JSON: formato y forma de uso</li>
+                        <li>Manipulacion de DOM</li>
+                        <li>Eventos: conceptos generales y escuchador de eventos</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>VueJs</h2>
+                <i class="fa-brands fa-vuejs"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales</li>
+                        <li>Renderizado</li>
+                        <li>Modificacion del DOM</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>SQL</h2>
+                <i class="fa-solid fa-database"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales</li>
+                        <li>Entidad, atributos y tipo de datos, primary keys</li>
+                        <li>Creacion de base de datos</li>
+                        <li>Gestion y manipulacion de datos con SQL</li>
+                        <li>Estructura de consultas: Clausulas SELECT, FROM, WHERE</li>
+                        <li>Funciones de agregacion: GROUP BY</li>
+                        <li>Subconsultas</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>Python</h2>
+                <i class="fa-brands fa-python"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales: print por pantalla y lectura por teclado input</li>
+                        <li>conceptos basicos: tipos de datos(numeros enteros y flotantes, texto, booleanos)</li>
+                        <li>conceptos basicos: tipos de operadores(aritmeticos y de asignacion), variables</li>
+                        <li>Estructuras de control: Condicionales, sentencia If</li>
+                        <li>Iterativas: sentencia While y For</li>
+                        <li>conceptos: Cadenas de carateres, metodos de listas</li>
+                        <li>POO: Clases, objetos y atributos</li>
+                        <li>metodos de clase y metodos especiales:init,def,str</li>
+                        <li>Herencia y polimorfismo</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <article class="main-conocimientos-item">
+            <div>
+                <h2>Node Js</h2>
+                <i class="fa-brands fa-node-js"></i>
+                <p>
+                    <ul>
+                        <li>Conceptos generales: conceptos de Js</li>
+                        <li>Patrones de diseño MVC: controladores, rutas, rutas parametrizadas, sistemas de ruteo</li>
+                        <li>Template Engines: EJS, tags en ejs, parametros compartidos, archivos parciales</li>
+                        <li>CRUD: metodos HTTP(GET,POST,PUT y DELETE), error 404</li>
+                        <li>Multer: subida de archivos y validacion</li>
+                        <li>Middlewares: aplicacion global, aplicacion por ruta, express validator</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="main-experiencia">
+        <h2 id="exp">Experiencia</h2>
+        <article class="main-exp-card">
+            <h2 class="main-exp-h2">Proyecto Integrador CODO A CODO 4.0 (2022)</h2>
+            <div>
+                <h3>Lenguajes utilizados: </h3>
+                <ul>
+                    <li>
+                        Front-End : HTML,CSS,JS,Bootstrap,VueJs
+                    </li>
+                    <li>
+                        Back-End: SQL,Python
+                    </li>
+                </ul>
+                <p>
+                    Proyecto integrador que realizamos en un equipo de 3 integrantes para la cursada de CODO A CODO 4.0 del año 2022
+                    <p>en el cual realizamos desde la maquetacion con los lenguajes mencionados, se consumio una API con vueJs en la seccion de "catalogos", y se completo con un CRUD en la seccion de "añadir peliculas"</p>
+                </p>
+
+                <p>Link del repositorio ( sin crud) : <a href="https://ismaelaxel.github.io/Proyecto_Cine.github.io/index.html">link</a></p>
+                <p>Link del repositorio del proyecto: <a href="https://github.com/IsmaelAxel/Proyecto_Cine.github.io">link</a></p>
+            </div>
+        </article>
+        <article class="main-exp-card">
+            <h2 class="main-exp-h2">Proyecto Integrador Digital House (2023)</h2>
+            <div>
+                <h3>Lenguajes utilizados: </h3>
+                <ul>
+                    <li>
+                        Front-End : HTML,CSS,JS
+                    </li>
+                    <li>
+                        Back-End: Node Js
+                    </li>
+                </ul>
+                <p>
+                    Proyecto integrador que corresponde a la cursada de Digital House
+                    
+                    <p>
+                        En este proyecto estamos construyendo un e-commerce dirigido al rubro de artesanos, donde puedan vender y comprar productos y obras artesanales
+                    </p>
+                    <p>
+                        todavia esta en proceso
+                    </p>
+                </p>
+
+                <p>Link del repositorio del proyecto: <a href="https://github.com/BraianGimenez/Grupo_6_ArtesSanApp">link</a></p>
+            </div>
+        </article>
+        
+    </section>
+</main>
+<footer>
+    <div class="footer-logo">
+        <a href="https://github.com/nicolasR9322">
+            <img src="./images/icono estrella.png" alt="">
+        </a>
+    </div>
+    <div class="footer-contacto">
+        <span class="contacto">Contacto</span>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?app=desktop&v=dQw4w9WgXcQ">
+                    instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/nicolas-rodriguez93/">
+                    Linkedin
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/+541155179664/?text=hola mundo">
+                    whatsapp
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
+
+<script src="./index.js"></script>
+
 </body>
 </html>
