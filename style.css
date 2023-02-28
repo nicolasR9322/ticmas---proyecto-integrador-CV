@@ -203,6 +203,14 @@ main img{
     height: 100px;
 }
 
+main img.main-principal{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 60px !important;
+    border: 5px groove var(--rosa);
+}
+
 
 
 /* ------ SECCION PRINCIPAL INICIO  ------*/
@@ -266,8 +274,8 @@ main section.main-intro .main-card{
 }
 .main-carta-contenedor p.main-show{
     position: absolute;
-    top: 55%;
-    left: 35%;
+    top: 50%;
+    left: 45%;
     color: #fff;
     
 }
@@ -291,6 +299,11 @@ main section.main-intro .main-card{
     overflow-y: scroll;
     text-align: center;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 /* ------ tarjeta girable FINAL  ------*/

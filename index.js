@@ -23,4 +23,3 @@ for (let i = 0; i < cerrarLinks.length; i++) {
   }
   
 };
-
